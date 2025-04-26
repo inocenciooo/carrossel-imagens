@@ -5,7 +5,6 @@ let botaoVoltar = document.querySelectorAll("img")[0];
 let botaoAvancar = document.querySelectorAll("img")[1];
 
 let temas = ["tema-rosa", "tema-amarelo", "tema-laranja", "tema-azul"];
-
 let imagemDeFundo = [
   "fundo-rosa",
   "fundo-amarelo",
@@ -28,7 +27,6 @@ botaoAvancar.addEventListener("click", function () {
     saibaMais.classList.replace(temas[i - 1], temas[i]);
     fundoImagem.classList.replace(imagemDeFundo[i - 1], imagemDeFundo[i]);
     botaoVoltar.classList.remove("fim-das-imagens");
-    console.log(i);
   }
 });
 
@@ -41,7 +39,6 @@ botaoVoltar.addEventListener("click", function () {
     saibaMais.classList.replace(temas[i + 1], temas[i]);
     fundoImagem.classList.replace(imagemDeFundo[i + 1], imagemDeFundo[i]);
     botaoAvancar.classList.remove("fim-das-imagens");
-    console.log(i);
   } else {
     botaoVoltar.classList.add("fim-das-imagens");
   }

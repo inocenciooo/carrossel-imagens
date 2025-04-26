@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html,
+body {
+  min-height: 100vh;
+}
+img {
+  height: 100px;
+  cursor: pointer;
+}
+main {
+  display: grid;
+  grid-template-columns: 10vw 80vw 10vw;
+  grid-template-rows: 10vh 80vh 10vh;
+  grid-template-areas:
+    ". . ."
+    "back section foward"
+    ". . .";
+}
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3.5vw;
+}
+#back {
+  grid-area: back;
+  transform: scaleX(-1);
+}
+section {
+  grid-area: section;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.card {
+  background-color: white;
+  font-family: "Roboto";
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 700px;
+  width: 600px;
+}
+.card h1 {
+  font-size: 50px;
+  line-height: 100%;
+  font-weight: 400;
+}
+.card p {
+  font-size: 25px;
+  line-height: 35px;
+  font-weight: 300;
+  text-align: justify;
+}
+#forward {
+  grid-area: foward;
+}
+#saiba-mais {
+  font-size: 30px;
+  line-height: 100%;
+  font-weight: 700;
+}
+
+/* CLASSES APLICADAS COM JS */
+.fim-das-imagens {
+  opacity: 50%;
+}
+.tema-rosa {
+  color: #c04270;
+}
+.tema-amarelo {
+  color: #d9dd10;
+}
+.tema-laranja {
+  color: #a63a17;
+}
+.tema-azul {
+  color: #10acdd;
+}
+.fundo-rosa {
+  background: url(../src/images/imagem1.jpg) no-repeat center center;
+  background-size: cover;
+}
+.fundo-amarelo {
+  background: url(../src/images/imagem2.jpg) no-repeat center center;
+  background-size: cover;
+}
+.fundo-laranja {
+  background: url(../src/images/imagem3.jpg) no-repeat center center;
+  background-size: cover;
+}
+.fundo-azul {
+  background: url(../src/images/imagem4.jpg) no-repeat center center;
+  background-size: cover;
+}
